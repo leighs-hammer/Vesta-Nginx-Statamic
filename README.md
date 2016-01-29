@@ -35,3 +35,10 @@ Will install one of my favorite fiddle around tools.
 `yum replace php-common --replace-with=php70w-common`
 
 Replace that shite & you are done!
+
+### Initiators
+
+Both Nginx & PHP-FPM will need to be set to start on reboot after this upgrade. ( `chkconfig SERVICE on` or `systemctl enable SERVICE.service` )
+
+Note: its a game of Russian roulette on server if init.d scripts will be added on yum install or plugin replace, so you may want to do that to pretty up the responses.
+If I have time I will add scripts, other wise google is your friend.
